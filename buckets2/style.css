@@ -22,12 +22,24 @@ body {
 }
 
 h1 {
+    position: relative;
     color: #ff007a;
     font-size: 24px;
     line-height: 32px;
     margin: 0;
     padding: 0 0 0 31px;
-    border-left: 8px solid #ff007a;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: #ff007a;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
 }
 
 ul {
@@ -55,6 +67,7 @@ li {
 }
 
 li:hover {
+    width: calc(100% + 20px);
     border-color: #759cff;
     color: #759cff;
     font-weight: bold;
