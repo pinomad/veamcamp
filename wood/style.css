@@ -1,38 +1,43 @@
 body {
-    margin: 0;
+    margin: 0; 
 }
 
 h1 {
     margin: 0;
     font-size: 32px;
-    width: 60%;
-    border-bottom: 2px solid #f8b50e;
-    margin-bottom: 60px;
-    letter-spacing: 0.32em;
+    width: 373px;
+    border-bottom: 2px solid #FFA500;
+    margin-bottom: 26px;
+    letter-spacing: 0.19em;
+}
+
+header, main, .footer {
+    min-width: 960px;
 }
 
 header {
-    padding-top: 50px;
+    padding-top: 100px;
     background-image: url(./images/header-bg.png);
-    color: #f8b50e;
+    color: #FFA500;
 }
 
 section {
-    width: 800px;
+    width: 960px;
     margin: 0 auto;
 }
 
 p {
     margin: 0;
-    width: 60%;
-    padding-bottom: 60px;
+    width: 482px;
+    padding-bottom: 70px;
+    line-height: 160%;
 }
 
 header section {
     padding: 50px 50px 0 50px;
-    border-top: 30px solid #f8b50e;
-    border-left: 30px solid #f8b50e;
-    border-right: 30px solid #f8b50e;
+    border-top: 30px solid #FFA500;
+    border-left: 30px solid #FFA500;
+    border-right: 30px solid #FFA500;
     background-image: url(./images/container-bg.png);
     background-repeat: no-repeat;
     background-position: calc(100% - 40px) 40px;
@@ -46,37 +51,51 @@ main {
 }
 
 main section {
-    /* border: 1px solid blue; */
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
 }
 
 main section .main_box {
-    /* border: 1px solid red; */
+    width: 300px;
+    border-radius: 6px;
 }
 
 main section .main_img {
     display: block;
-    width: 250px;
-    /* border-bottom: 2px solid #f8b50e; */
+    border-radius: 6px 6px 0 0 ;
 }
 
 main section .main_box_bottom {
-    border-top: 2px solid #f8b50e;
+    border-top: 4px solid #FFA500;
     background-color: #fff;
     display: flex;
-    justify-content: space-around;
+    border-radius: 0 0 6px 6px ;
 }
 
 main section .main_box span {
-    color: #f8b50e;
-    line-height: 52px;
-    /* display: inline-block; */
-}
-
-main section .main_box img {
-    /* display: inline-block; */
+    color: #FFA500;
+    line-height: 50px;
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 10px;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .footer {
+    text-align: center;
+    border-top: 2px solid #AAAAAA;
+}
+
+.footer span {
+    width: 960px;
+    display: inline-block;
+    margin: 0 auto;
+    color: #AAAAAA;
+    height: 53px;
+    line-height: 53px;
+    letter-spacing: 0.29em;
+    font-weight: bold;
 }
