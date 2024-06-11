@@ -1,24 +1,32 @@
 body {
-    margin: 0; 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
     margin: 0;
     font-size: 32px;
     width: 373px;
-    border-bottom: 2px solid #FFA500;
+    border-bottom: 4px solid #ffa500;
     margin-bottom: 26px;
-    letter-spacing: 0.19em;
+    line-height: 40px;
+    letter-spacing: 0.17em;
 }
 
-header, main, .footer {
+h1 span {
+    font-weight: normal;
+}
+
+header,
+main,
+.footer {
     min-width: 960px;
 }
 
 header {
     padding-top: 100px;
     background-image: url(./images/header-bg.png);
-    color: #FFA500;
+    color: #ffa500;
 }
 
 section {
@@ -34,14 +42,15 @@ p {
 }
 
 header section {
-    padding: 50px 50px 0 50px;
-    border-top: 30px solid #FFA500;
-    border-left: 30px solid #FFA500;
-    border-right: 30px solid #FFA500;
+    padding: 60px 60px 0 60px;
+    border-top: 30px solid #ffa500;
+    border-left: 30px solid #ffa500;
+    border-right: 30px solid #ffa500;
     background-image: url(./images/container-bg.png);
     background-repeat: no-repeat;
     background-position: calc(100% - 40px) 40px;
     box-sizing: border-box;
+    line-height: 25.6px;
 }
 
 main {
@@ -62,18 +71,18 @@ main section .main_box {
 
 main section .main_img {
     display: block;
-    border-radius: 6px 6px 0 0 ;
+    border-radius: 6px 6px 0 0;
 }
 
 main section .main_box_bottom {
-    border-top: 4px solid #FFA500;
+    border-top: 4px solid #ffa500;
     background-color: #fff;
     display: flex;
-    border-radius: 0 0 6px 6px ;
+    border-radius: 0 0 6px 6px;
 }
 
 main section .main_box span {
-    color: #FFA500;
+    color: #ffa500;
     line-height: 50px;
     font-weight: bold;
     display: inline-block;
@@ -86,14 +95,14 @@ main section .main_box span {
 
 .footer {
     text-align: center;
-    border-top: 2px solid #AAAAAA;
+    border-top: 2px solid #aaaaaa;
 }
 
 .footer span {
     width: 960px;
     display: inline-block;
     margin: 0 auto;
-    color: #AAAAAA;
+    color: #aaaaaa;
     height: 53px;
     line-height: 53px;
     letter-spacing: 0.29em;
