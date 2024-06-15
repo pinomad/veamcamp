@@ -1,153 +1,165 @@
-/* resets */
-body {
-    margin: unset;
+/* colors */
+:root {
+  --color--red: #ff6600;
+  --color--blue: #0075ff;
+  --color--green: #17a651;
 }
 
-h1, h2 {
-    margin: unset;
-    font-size: unset;
-    font-weight: unset;
+/* resets */
+body {
+  margin: unset;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  margin: unset;
+  font-size: unset;
+  font-weight: unset;
 }
 
 p {
-    margin: unset;
+  margin: unset;
 }
 
 /* layouts */
 .wrapper {
-    width: 960px;
-    margin: 0 auto;
+  width: 960px;
+  margin: 0 auto;
 }
 
 /* components */
 .header {
-    background-color: #F4F4F4;
-    color: #FF6600;
-    min-height: 160px;
+  background-color: #f4f4f4;
+  min-height: 160px;
 }
 
 .header section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header h1 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 
-
 .main {
-    background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
 
 .main section {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 0;
 }
 
 .content {
-    width: 300px;
-    border-radius: 12px;
-    box-shadow: 0 4px 4px #aaa;
-    overflow: hidden;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px #aaa;
+  overflow: hidden;
+}
+
+.orange {
+  color: var(--color--red);
+}
+
+.orange_back {
+  background-color: var(--color--red);
+}
+
+.blue {
+  color: var(--color--blue);
+}
+
+.blue_back {
+  background-color: var(--color--blue);
+}
+
+.green {
+  color: var(--color--green);
+}
+
+.green_back {
+  background-color: var(--color--green);
 }
 
 .content_header {
-    position: relative;
-    min-height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  min-height: 200px;
+  z-index: 0;
 }
 
 .content_cover {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 200px;
 }
 
 .content h2 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 24px;
-    font-weight: bold;
-    padding: 10px 20px;
-    background-color: #000000;
-    border-top-right-radius: 8px;
-    opacity: 0.8;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-top-right-radius: 8px;
 }
 
-
 .content_main {
-    color: #666666;
-    font-size: 14px;
-    background-color: #fff;
-    padding: 20px;
-    line-height: 1.4;
+  color: #666666;
+  font-size: 14px;
+  background-color: #fff;
+  padding: 20px;
+  line-height: 1.4;
 }
 
 .content_footer {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #F4F4F4;
-    gap: 6px;
-    padding: 26px 18px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f4f4f4;
+  gap: 6px;
+  padding: 26px 18px;
+  flex-wrap: wrap;
 }
 
 .content_footer_hash {
-    color: #fff;
-    border-radius: 30px;
-    padding: 2px 8px;
-    font-size: 12px;
-    white-space: nowrap;
+  color: #fff;
+  border-radius: 30px;
+  padding: 2px 8px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer {
-    background-color: #D9D9D9;
-    color: #aaa;
-    font-size: 12px;
-    padding-bottom: 26px;
-    letter-spacing: 0.24em;
+  background-color: #d9d9d9;
+  color: #aaa;
+  font-size: 12px;
+  padding-bottom: 26px;
+  letter-spacing: 0.24em;
 }
 
 .highlight {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .half_size {
-    transform: scale(0.5);
-    transform-origin: center right
+  transform: scale(0.5);
+  transform-origin: center right;
 }
 
 .hash {
-    opacity: 50%;
-    margin-right: 4px;
-}
-
-/* colors */
-.hotdog {
-    color: #FF6600;
-}
-
-.burger {
-    color: #17A651;
-}
-
-.pizza {
-    color: #0075FF;
-}
-
-.background_hotdog {
-    background-color: #FF6600;
-}
-
-.background_burger {
-    background-color: #17A651;
-}
-
-.background_pizza {
-    background-color: #0075FF;
+  opacity: 50%;
+  margin-right: 4px;
 }
