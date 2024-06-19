@@ -1,0 +1,77 @@
+/* resets */
+body {
+    margin: unset;
+    font-family: Montserrat;
+}
+
+h1,
+h2 {
+    margin: unset;
+    font-size: unset;
+    font-weight: unset;
+}
+
+p {
+    margin: unset;
+}
+
+  
+/* layouts */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/background.png);
+}
+
+.wrapper {
+    width: 1076px;
+    margin: 0 auto;
+    display: flex;
+    border: 1px solid red
+}
+  
+/* contents */
+.header {
+    width: 244px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/sidebar-background.png);
+}
+
+.header_wrapper {
+    padding: 16px;
+}
+
+.header_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-coffee {
+    display: inline-block;
+    width: 79px;
+}
+
+h1 {
+    color: #fff;
+}
+
+.header_content {
+    color: #999999;
+}
+
+.header .location {
+    display: inline-block;
+    background-color: #0468FF;
+}
+
+.header .share {
+    display: inline-block;
+    background-color: #D9D9D9;
+}
+
+.main_cover {
+    width: 120px
+}
