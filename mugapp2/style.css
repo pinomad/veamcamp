@@ -22,6 +22,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
     background-image: url(./images/background.png);
 }
 
@@ -47,29 +48,42 @@ body {
 .header_header {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 8px;
 }
 
 .icon-coffee {
     display: inline-block;
-    width: 79px;
+    width: 80px;
 }
 
 h1 {
+    font-size: 24px;
     color: #fff;
+    border-bottom: 5px solid #444;
 }
 
 .header_content {
+    font-size: 14px;
     color: #999999;
+    margin-bottom: 26px;
 }
 
 .header .location {
+    width: 100%;
     display: inline-block;
     background-color: #0468FF;
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    min-height: 22px;
 }
-
+    
 .header .share {
+    width: 100%;
     display: inline-block;
     background-color: #D9D9D9;
+    font-size: 12px;
+    letter-spacing: 0.18em;
 }
 
 .main_cover {
