@@ -1,7 +1,7 @@
 /* resets */
 body {
     margin: unset;
-    font-family: Montserrat;
+    font-family: "Montserrat", sans-serif;
 }
 
 h1,
@@ -15,7 +15,12 @@ p {
     margin: unset;
 }
 
-  
+button {
+    /* height: unset; */
+    padding: unset;
+    border: unset;
+}
+
 /* layouts */
 
 body {
@@ -30,15 +35,16 @@ body {
     width: 1076px;
     margin: 0 auto;
     display: flex;
-    border: 1px solid red
 }
-  
+
 /* contents */
 .header {
     width: 244px;
     display: flex;
     flex-direction: column;
     background-image: url(./images/sidebar-background.png);
+    background-size: cover;
+    background-position: center;
 }
 
 .header_wrapper {
@@ -49,6 +55,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .icon-coffee {
@@ -56,7 +63,7 @@ body {
     width: 80px;
 }
 
-h1 {
+.header_header h1 {
     font-size: 24px;
     color: #fff;
     border-bottom: 5px solid #444;
@@ -68,24 +75,89 @@ h1 {
     margin-bottom: 26px;
 }
 
-.header .location {
+.header_button {
     width: 100%;
     display: inline-block;
-    background-color: #0468FF;
-    color: #fff;
     font-size: 12px;
     letter-spacing: 0.18em;
+    border-radius: 2px;
     min-height: 22px;
+    margin-bottom: 6px;
+    font-weight: bold;
 }
-    
-.header .share {
-    width: 100%;
-    display: inline-block;
-    background-color: #D9D9D9;
-    font-size: 12px;
-    letter-spacing: 0.18em;
+
+.location {
+    color: #fff;
+    background-color: #0468ff;
+    margin-bottom: 6px;
+}
+
+.share {
+    color: #000;
+    background-color: #d9d9d9;
+}
+
+.main {
+    background-color: #fff;
+    padding: 16px;
+    color: #666;
+}
+
+.main_wrapper {
+    width: 800px;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 8px solid #eee;
+}
+
+.main_header h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.view_all {
+    font-size: 10px;
+    background-color: #eee;
+    border-radius: 15px;
+    line-height: 1.8;
+    font-weight: bold;
+    color: #666;
+    padding: 0 10px;
+    margin-top: 4px;
+}
+
+.main_content {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.main_content article {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    gap: 60px;
+    color: #333;
+    padding: 16px;
+    background-color: #eee;
+    border-radius: 6px;
+}
+
+.main_content p {
+    /* margin-bottom: 20px; */
+}
+
+.main_content span {
+    margin-left: auto;
+    color: #111;
 }
 
 .main_cover {
-    width: 120px
+    width: 120px;
 }
