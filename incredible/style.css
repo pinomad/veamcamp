@@ -19,10 +19,22 @@ p {
     line-height: 1.6;
 }
 
-/* content */
+/* layout */
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.body_wrapper {
+    width: 1200px;
     position: relative;
     background-color: #111;
+}
+/* content */
+body {
+    background-color: #1E1E1E;
 }
 
 .main-cover {
@@ -43,10 +55,10 @@ body {
 }
 
 .wrapper {
-    position: absolute;
-    top: 504px;
+    position: relative;
     padding: 60px;
     display: flex;
+    margin-top: -180px;
 }
 
 main .header {
@@ -75,6 +87,7 @@ main article {
 aside {
     margin-top: 50px;
     margin-left: 100px;
+    margin-right: 40px;
     color: #fff;
 }
 
@@ -130,4 +143,28 @@ aside h2 {
 
 .ml-20 {
     margin-left: -20px;
+}
+
+@media (max-width: 700px) {
+    .body_wrapper {
+        width: 700px;
+    }
+    
+    .wrapper {
+        flex-direction: column;
+        margin-top: -116px;
+        padding: 40px;
+    }
+
+    .gradation {
+        min-height: 146px;
+    }
+
+    .main-cover {
+        min-height: 390px;
+    }
+
+    aside {
+        margin-left: 0;
+    }
 }
