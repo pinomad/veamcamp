@@ -34,7 +34,7 @@ body {
 }
 /* content */
 body {
-    background-color: #1E1E1E;
+    background-color: #1e1e1e;
 }
 
 .main-cover {
@@ -81,7 +81,7 @@ main .header h1 {
 }
 
 main article {
-    width: 700px;
+    max-width: 700px;
 }
 
 aside {
@@ -149,7 +149,7 @@ aside h2 {
     .body_wrapper {
         width: 700px;
     }
-    
+
     .wrapper {
         flex-direction: column;
         margin-top: -116px;
