@@ -126,6 +126,14 @@ ul {
 
 .top_item_header h2 {
     position: absolute;
+    max-width: 80%;
+    white-space: normal; 
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
